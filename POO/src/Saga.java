@@ -22,8 +22,12 @@ public class Saga {
         return livros;
     }
 
-    public Saga(int nota, Livro[] livros) {
+    public Saga(int nota) {
         this.nota = nota;
+    }
+
+    public Saga(int nota, Livro[] livros){
         this.livros = livros;
+        this.nota = nota;
     }
 }

@@ -8,7 +8,8 @@ public class Autor {
             System.out.println("Saga >> " + i);
             Livro[] livros = this.sagas[i].getLivros();
                 for (int j = 0; j < livros.length; j++) {
-                    System.out.println(livros[j].getTitulo());
+                    if(livros[j] != null)
+                        System.out.println(livros[j].getTitulo());
                 }
             }
         }
